@@ -4,22 +4,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-<link rel="styleheet" href="style.css">
-<title>Bootstrap 5 project</title>
+<title>Ed Art</title>
+<link rel="styleheet" href="edstyles.css">
+</head>
 <style>
-	/* css not being loaded to html */
+body::before {
+	display:block;
+	content:'';
+	height:60px;
+}
+	
  @media(min-width: 768px) {
 	.comments-input {
 		width:70%;
 	}
 }
 
+.c-item {
+	height:480px;
+}
+.c-img {
+	height:100%;
+	object-fit:contain;
+	filter: brightness(1.2);
+}
 </style>
-</head>
-
 <body>
 <!-- navbar -->
-	<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
 		<div class="container">	
 			<a href="#" class="navbar-brand"><img src="logo black.png" alt="edward" height="40"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -174,39 +186,39 @@
 					<a href="#" class="btn btn-light mt-3">
 						<i class="bi bi-chevron-right">Read more</i>
 					</a>
-					<div class="col-md p-5">
-						<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+					<div class="col px-auto py-5">
+						<div id="artwheel" class="carousel slide" data-bs-ride="carousel">
 						  <div class="carousel-inner">
-							<div class="carousel-item active" data-bs-interval="10000">
-							  <img src="owl.jpg" class="d-block w-100 img-fluid" alt="owl oil canvas">
+							<div class="carousel-item c-item active" data-bs-interval="10000">
+							  <img src="owl.jpg" class="d-block w-100  img-fluid c-img" alt="owl oil canvas">
 							</div>
-							<div class="carousel-item" data-bs-interval="2000">
-							  <img src="wip.jpg" class="d-block w-100 img-fluid" alt="wip ballpoint-pen art">
+							<div class="carousel-item c-item" data-bs-interval="2000">
+							  <img src="wip.jpg" class="d-block w-100  img-fluid c-img" alt="wip ballpoint-pen art">
 							</div>
-							<div class="carousel-item">
-							  <img src="oil canvas.jpg" class="d-block w-100 img-fluid" alt="oil canvas">
+							<div class="carousel-item c-item">
+							  <img src="oil canvas.jpg" class="d-block w-100  img-fluid c-img" alt="oil canvas">
 							</div>
-							<div class="carousel-item">
-							  <img src="ag.jpg" class="d-block w-100 img-fluid" alt="oil canvas">
+							<div class="carousel-item c-item">
+							  <img src="ag.jpg" class="d-block w-100  img-fluid c-img" alt="oil canvas">
 							</div>
-							<div class="carousel-item">
-							  <img src="garden.jpg" class="d-block w-100 img-fluid" alt="oil canvas">
+							<div class="carousel-item c-item">
+							  <img src="garden.jpg" class="d-block w-100  img-fluid c-img" alt="oil canvas">
 							</div>
-							<div class="carousel-item">
-							  <img src="gotc.jpg" class="d-block w-100 img-fluid" alt="oil canvas">
+							<div class="carousel-item c-item">
+							  <img src="gotc.jpg" class="d-block w-100  img-fluid c-img" alt="oil canvas">
 							</div>
-							<div class="carousel-item">
-							  <img src="swan.jpg" class="d-block w-100 img-fluid" alt="oil canvas">
+							<div class="carousel-item c-item">
+							  <img src="swan.jpg" class="d-block w-100  img-fluid c-img" alt="oil canvas">
 							</div>
-							<div class="carousel-item">
-							  <img src="taweret.jpg" class="d-block w-100 img-fluid" alt="oil canvas">
+							<div class="carousel-item c-item">
+							  <img src="taweret.jpg" class="d-block w-100  img-fluid c-img" alt="oil canvas">
 							</div>
 						  </div>
-						  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+						  <button class="carousel-control-prev" type="button" data-bs-target="#artwheel" data-bs-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							<span class="visually-hidden">Previous</span>
 						  </button>
-						  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+						  <button class="carousel-control-next" type="button" data-bs-target="#artwheel" data-bs-slide="next">
 							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="visually-hidden">Next</span>
 						  </button>
